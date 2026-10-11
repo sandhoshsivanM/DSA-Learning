@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>DSA</RootNamespace>
+    <!-- Unsolved problems only throw, so don't warn about unused parameters etc. -->
+    <NoWarn>$(NoWarn);CS8618;IDE0060</NoWarn>
+  </PropertyGroup>
+
+</Project>

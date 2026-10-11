@@ -1,0 +1,48 @@
+// HOW TO ADD A NEW PROBLEM
+// 1. Copy this file into the right topic folder under Problems/, e.g.
+//      Problems/02_TwoPointers/P0125_ValidPalindrome.cs   (note: .cs, not .txt)
+// 2. Replace every PXXXX / XXXX / MethodName below.
+// 3. Paste the method signature from LeetCode's C# editor into Solution.
+// 4. Add the examples from the problem page as tests.
+// 5. Run:  dotnet run -- XXXX
+
+namespace PXXXX_ShortName;
+
+/*
+ * XXXX. Problem Title (Easy/Medium/Hard)
+ * https://leetcode.com/problems/problem-slug/
+ *
+ * <paste the problem statement here>
+ *
+ * Example 1:
+ *   Input:  ...
+ *   Output: ...
+ *
+ * Constraints:
+ *   ...
+ */
+
+public class Solution
+{
+    public int MethodName(int[] nums)
+    {
+        // TODO: write your solution here
+        throw new NotImplementedException();
+    }
+}
+
+public class Tests : IProblem
+{
+    public int Number => XXXX;
+    public string Title => "Problem Title";
+    public string Topic => "Two Pointers";
+
+    public void Run()
+    {
+        var s = new Solution();
+        // Test.Check          -> exact match (order matters)
+        // Test.CheckUnordered -> any order of elements is fine
+        // Test.CheckGroups    -> list of groups, any order at both levels
+        Test.Check("Example 1", 0, () => s.MethodName([1, 2, 3]));
+    }
+}
