@@ -36,7 +36,6 @@ namespace DSA.Problems;
 
 public class SumofSquaresofSpecialElements
 {
-    private readonly int[] _nums = new int[] { 2, 7, 1, 19, 18, 3 };
     public int SumOfSquares(int[] nums)
     {
         int n = nums.Length;
@@ -53,5 +52,20 @@ public class SumofSquaresofSpecialElements
         }
 
         return sum;
+    }
+}
+
+public class Tests : IProblem
+{
+    public int Number => 2778;
+    public string Title => "Sum of Squares of Special Elements";
+    public string Topic => "Arrays & Hashing";
+
+    public void Run()
+    {
+        var s = new SumofSquaresofSpecialElements();
+        Test.Check("Example 1", 21, () => s.SumOfSquares([1, 2, 3, 4]));
+        Test.Check("Example 2", 63, () => s.SumOfSquares([2, 7, 1, 19, 18, 3]));
+        Test.Check("Single element", 25, () => s.SumOfSquares([5]));
     }
 }
